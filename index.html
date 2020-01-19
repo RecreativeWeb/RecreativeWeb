@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121557050-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-121557050-1');
+	</script>
 	<meta charset="UTF-8">
 	<title>Recreative Web: front-end developer, works and skills</title>
+	<!-- Google Tag Manager -->
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+	j.async=true;
+	j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+	f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WVD2456');</script>
+	<!-- End Google Tag Manager -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<header>
-		<h1>Recreative Web.</h1>
-		<div>
-			
+		<h1 class="logo">Re<span class="calligraphy">crea</span>tive <span class="calligraphy">Web.</span></h1>
+		<div class="hamburger-icon">
+			<div class="bar-one"></div>
+			<div class="bar-two"></div>
+			<div class="bar-three"></div>
 		</div>
 		<nav>
 			<ul>
@@ -21,21 +47,65 @@
 		</nav>
 	</header>
 	<main>
-		
+		<section class="versionning">
+			<img src="img/avatar.png" alt="">
+			<img src="img/versionning.jpg" alt="">
+		</section>
 	</main>
 	<footer>
-		<div>
-			<h3>front ressources</h3>
-		</div>
-		<div>
-			<h3>back ressources</h3>h3>
-		</div>
-		<div>
-			<h3>toolbox</h3>
-		</div>
-		<div>
-			<h3>more</h3>
-		</div>
+		<article>
+			<h3 class="subtitle">front ressources</h3>
+			<ul>
+				<li><a href="https://developer.mozilla.org/fr" target="blank">MDN</a></li>
+				<li><a href="https://www.w3schools.com/" target="blank">W3schools</a></li>
+				<li><a href="http://caniuse.com/#home" target="blank">Can i use</a></li>
+				<li><a href="http://validator.w3.org/" target="blank">Validator W3C html</a></li>
+				<li><a href="http://jigsaw.w3.org/css-validator/" target="blank">Validator W3C css</a></li>
+				<li><a href="http://necolas.github.io/normalize.css" target="blank">Normalize CSS</a></li>
+				<li><a href="http://lesscss.org/#" target="blank">Less</a></li> 
+				<li><a href="http://sass-lang.com" target="blank">Sass</a></li>
+				<li><a href="http://stylus-lang.com/">Stylus</a></li>
+				<li><a href="http://getbootstrap.com" target="blank">Bootstrap</a></li>
+				<li><a href="http://materializecss.com" target="blank">Materialize CSS</a></li>
+				<li><a href="https://angular.io" target="blank">Angular</a></li>
+			</ul>
+		</article>
+		<article>
+			<h3 class="subtitle">back ressources</h3>
+			<ul>
+				<li><a href="http://php.net/manual/fr" target="blank">PHP.net</a></li>
+				<li><a href="https://symfony.com" target="blank">Symfony</a></li>
+				<li><a href="https://twig.symfony.com" target="blank">Twig</a></li>
+				<li><a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/index.html" target="blank">Doctrine 2</a></li>
+			</ul>
+		</article>
+		<article>
+			<h3 class="subtitle">toolbox</h3>
+			<ul>
+				<li><a href="https://fonts.google.com/" target="blank">Google Fonts</a></li>
+				<li><a href="https://www.dafont.com/fr/" target="blank">Dafont</a></li>
+				<li><a href="http://glyphicons.com" target="blank">Glyphicon</a></li> 
+				<li><a href="http://fontawesome.io" target="blank">Font awesome</a></li>
+				<li><a href="https://developer.mozilla.org/fr/docs/Mozilla/Mobile/Balise_meta_viewport#Les_bases_du_viewport" target="blank">Balise Viewport</a></li>
+				<li><a href="http://ianlunn.github.io/Hover" target="blank">Hover CSS</a></li>
+				<li><a href="http://www.kitsgraphiques.net/convertisseur-rvb-hexadecimal.html" target="blank">Kits graphique</a></li>
+				<li><a href="https://material.io/guidelines" target="blank">Material Design</a></li>
+				<li><a href="https://cssmatic.com/box-shadow" target="blank">Box-shadow</a></li>
+				<li><a href="https://cssmatic.com/border-radius" target="blank">Border-radius</a></li>
+				<li><a href="https://cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28left\%2C\%20rgba\%28248\%2C80\%2C50\%2C1\%29\%200\%25\%2C\%20rgba\%28241\%2C111\%2C92\%2C1\%29\%2050\%25\%2C\%20rgba\%28246\%2C41\%2C12\%2C1\%29\%2051\%25\%2C\%20rgba\%28240\%2C47\%2C23\%2C1\%29\%2071\%25\%2C\%20rgba\%28231\%2C56\%2C39\%2C1\%29\%20100\%25\%29\%3B'" target="blank">Gradient</a></li>
+				<li><a href="https://jquery.com" target="blank">jQuery</a></li>
+				<li><a href="https://getcomposer.org" target="blank">Composer</a></li>
+			</ul>
+		</article>
+		<article>
+			<h3 class="subtitle">more</h3>
+			<a href="https://github.com/RecreativeWeb" target="blank" class="github"><img src="images/site/github.png" /></a>	
+			<audio controls>
+				<source src="audios/fiction.mp3">
+				<source src="audios/dangerous.mp3">
+			</audio>
+			<small class="copyright">copyright @ Recreative Web</small>
+		</article>
 	</footer>
 </body>
 </html>

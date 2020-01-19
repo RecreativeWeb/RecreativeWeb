@@ -36,9 +36,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  -webkit-box-shadow: 0px 10px 40px 10px #737373;
-  -moz-box-shadow: 0px 10px 40px 10px #737373;
-  box-shadow: 0px 10px 40px 10px #737373;
+  -webkit-box-shadow: 0px -12px 40px -2px #737373;
+  -moz-box-shadow: 0px -12px 40px -2px #737373;
+  box-shadow: 0px -12px 40px -2px #737373;
 }
 main {
   padding-top: 100px;
@@ -112,6 +112,14 @@ nav:hover {
 #contact:target main {
   margin-top: -100px;
   padding-top: 100px;
+}
+.versionning img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.versionning img .avatar {
+  background-color: #d3d3d3;
 }
 ul {
   font-family: var(--encode);
