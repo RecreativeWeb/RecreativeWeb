@@ -1,0 +1,52 @@
+.logo
+	font-size var(--main-title--mobil)
+	font-family var(--montserrat)
+	.calligraphy
+		font-size var(--main-title--mobil)
+		font-family var(--shadows)
+		
+.hamburger-icon
+	cursor pointer
+	.bar-one,
+	.bar-two,
+	.bar-three
+		width 35px
+		height 5px
+		background-color black
+		margin 6px 0
+	
+nav
+	position absolute
+	top 0
+	right -70%
+	width 70%
+	height 100vh
+	z-index 200
+	background-color silver
+	transition right .5s ease
+	ul
+		font-family var(--encode)
+		li 
+			list-style-type none
+			height 3.4rem
+			border-bottom 1px solid black
+			a 
+				color black
+				line-height 3.4rem
+				text-transform uppercase
+				
+nav:hover
+	right 0
+				
+#home:target,
+#home:target main,
+#works:target,
+#works:target main,
+#skills:target,
+#skills:target main,
+#contact:target,
+#contact:target main
+	margin-top -100px
+	padding-top 100px
+
+	  

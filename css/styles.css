@@ -1,0 +1,134 @@
+:root {
+/* font-family */
+  --montserrat: 'montserrat', sans-serif;
+  --shadows: 'Shadows Into Light', cursive;
+  --encode: 'Encode Sans Expanded', sans-serif;
+/* sizes */
+  --main-title--mobil: 2rem;
+  --title--mobil: 1.3rem;
+  --sub-title--mobil: 1.2rem;
+  --main-title--tablet: 2.2rem;
+  --title--tablet: 1.5rem;
+  --sub-title--tablet: 1.4rem;
+  --main-title--desktop: 2.4rem;
+  --title--desktop: 1.7rem;
+  --sub-title--desktop: 1.6rem;
+/* colors */
+  --yellow-dark: rgba(255,171,0,0.6);
+  --yellow-hover: #fff8dc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html {
+  font-size: 16px;
+}
+body {
+  position: relative;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-box-shadow: 0px 10px 40px 10px #737373;
+  -moz-box-shadow: 0px 10px 40px 10px #737373;
+  box-shadow: 0px 10px 40px 10px #737373;
+}
+main {
+  padding-top: 100px;
+}
+.title,
+.subtitle {
+  font-family: var(--encode);
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: var(--yellow-dark);
+  padding: 0.4rem;
+  text-align: center;
+}
+footer {
+  width: 100%;
+  background-color: #000;
+}
+.logo {
+  font-size: var(--main-title--mobil);
+  font-family: var(--montserrat);
+}
+.logo .calligraphy {
+  font-size: var(--main-title--mobil);
+  font-family: var(--shadows);
+}
+.hamburger-icon {
+  cursor: pointer;
+}
+.hamburger-icon .bar-one,
+.hamburger-icon .bar-two,
+.hamburger-icon .bar-three {
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  margin: 6px 0;
+}
+nav {
+  position: absolute;
+  top: 0;
+  right: -70%;
+  width: 70%;
+  height: 100vh;
+  z-index: 200;
+  background-color: #c0c0c0;
+  transition: right 0.5s ease;
+}
+nav ul {
+  font-family: var(--encode);
+}
+nav ul li {
+  list-style-type: none;
+  height: 3.4rem;
+  border-bottom: 1px solid #000;
+}
+nav ul li a {
+  color: #000;
+  line-height: 3.4rem;
+  text-transform: uppercase;
+}
+nav:hover {
+  right: 0;
+}
+#home:target,
+#home:target main,
+#works:target,
+#works:target main,
+#skills:target,
+#skills:target main,
+#contact:target,
+#contact:target main {
+  margin-top: -100px;
+  padding-top: 100px;
+}
+ul {
+  font-family: var(--encode);
+}
+ul li {
+  height: 2.4rem;
+}
+ul li a {
+  color: var(--yellow-dark);
+  text-decoration: none;
+  line-height: 2.4rem;
+  text-align: center;
+  display: block;
+}
+ul li a:active,
+ul li a:focus,
+ul li a:hover {
+  color: var(--yellow-hover);
+  cursor: pointer;
+}
