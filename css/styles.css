@@ -41,9 +41,15 @@ header {
   box-shadow: 0px -12px 40px -2px #737373;
 }
 main {
-  padding-top: 100px;
+  padding-top: 52px;
 }
-.title,
+.title {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+font-family var(--montserrat),
+color #282828,
 .subtitle {
   font-family: var(--encode);
   font-size: 1.3rem;
@@ -52,10 +58,12 @@ main {
   background-color: var(--yellow-dark);
   padding: 0.4rem;
   text-align: center;
+  width: 90%;
+  margin: 1rem auto;
 }
 footer {
   width: 100%;
-  background-color: #000;
+  background-color: #fff8dc;
 }
 .logo {
   font-size: var(--main-title--mobil);
@@ -113,6 +121,14 @@ nav:hover {
   margin-top: -100px;
   padding-top: 100px;
 }
+.accueil {
+  background-color: rgba(255,171,0,0.6);
+  padding: 5rem 1.5rem 5rem 1.5rem;
+}
+.accueil .junior {
+  font-family: var(--shadows);
+  font-size: 2rem;
+}
 .versionning img {
   display: block;
   width: 100%;
@@ -126,9 +142,10 @@ ul {
 }
 ul li {
   height: 2.4rem;
+  border-bottom: 1px solid #ffebcd;
 }
 ul li a {
-  color: var(--yellow-dark);
+  color: #000;
   text-decoration: none;
   line-height: 2.4rem;
   text-align: center;
@@ -137,6 +154,24 @@ ul li a {
 ul li a:active,
 ul li a:focus,
 ul li a:hover {
-  color: var(--yellow-hover);
+  color: #5f9ea0;
   cursor: pointer;
+}
+audio {
+  display: block;
+  margin: 1rem auto 0;
+}
+.copyright {
+  font-family: var(--shadows);
+  display: block;
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+.copyright a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.copyright a:hover {
+  color: #ff0;
 }
