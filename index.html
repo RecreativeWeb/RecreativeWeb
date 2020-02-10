@@ -32,30 +32,150 @@
 <body>
 	<header>
 		<h1 class="logo">Re<span class="calligraphy">crea</span>tive <span class="calligraphy">Web.</span></h1>
-		<div class="hamburger-icon">
+		<div class="hamburger-icon-open">
 			<div class="bar-one"></div>
 			<div class="bar-two"></div>
 			<div class="bar-three"></div>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="#home">home</a></li>
-				<li><a href="#works">works</a></li>
-				<li><a href="#skills">skills</a></li>
-				<li><a href="#contact">contact</a></li>
-				<li><a href="https://github.com/RecreativeWeb" target="blank" class="github"><img src="img/github.png" /></a></li>
-				<li><a href="https://github.com/RecreativeWeb" target="blank" class="linkedin"><img src="img/linkedin.png" /></a></li>
-			</ul>
-		</nav>
+		<div class="translate close">
+			<div class="hamburger-icon-close">
+				<div class="bar-one"></div>
+				<div class="bar-two"></div>
+				<div class="bar-three"></div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#home">home</a></li>
+					<li><a href="#works">works</a></li>
+					<li><a href="#skills">skills</a></li>
+					<li><a href="#contact">contact</a></li>
+					<!-- <li><a href="https://github.com/RecreativeWeb" target="blank" class="github"><img src="img/github.png" /></a></li>
+					<li><a href="https://github.com/RecreativeWeb" target="blank" class="linkedin"><img src="img/linkedin.png" /></a></li> -->
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
 		<!-- HOME -->
-		<section class="accueil" id="accueil">
+		<section class="home" id="home">
+			<h2 class="subtitle">HOME</h2>
 			<h2 class="title">Developpeuse web <span class="junior">junior</span></h2>
 			<p class="now">Actuellement en poste chez <br/> Pierre & Vacances</p>
 			<div class="trait"></div>
 			<p class="metiers" id="mots">applications, CMS, frameworks</p>
 			<p class="ancreContact"><a href="#contact">Contact</a></p>
+		</section>
+		<!-- WORKS -->
+		<section class="works" id="works">
+			<h2 class="subtitle">Works</h2>
+			<!-- CONSULTANTE -->
+			<h3 class="title">Consultante</h3>
+			<article>
+				<h4 class="customer">Center Parc & Pierre et vacances <br> (10/19 - 02/20)</h4>
+				<img src="img/cpe.jpg" class="versionning cpe" />
+				<img src="img/pierrevacances.png" class="cover" />
+				<p class="projectDescription">
+					<span class="specificity">Problématique:</span><br>  <br>
+					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
+					<span class="specificity">Environnement:</span> <br>
+					symfony 3 - backbone <br>
+					html5 - css3 - jQuery <br>
+					gitlab - mantis - figma
+					<span class="jaune"></span>
+				</p>
+			</article>
+			<div class="trait"></div>
+			<article>
+				<img src="img/centerparc.png" class="cover" />
+				<p class="projectDescription"> <br>
+					<span class="specificity">Problématique:</span><br>  <br>
+					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
+					<span class="specificity">Environnement:</span> <br>
+					symfony 3 - backbone <br>
+					html5 - css3 - jQuery <br>
+					gitlab - mantis - figma
+					<span class="jaune"></span>
+				</p>
+			</article>
+			<div class="trait"></div>
+			<article>
+				<h4 class="customer">Wamiz international (06/19 - 10/19)</h4>
+				<img src="img/wamiz.png" class="cover" />
+				<p class="projectDescription">
+					<span class="specificity">Problématique:</span><br>  <br>
+					<span class="specificity">Mission:</span> <br> résolution de bogues <br>
+					<span class="specificity">Environnement:</span> <br>
+					symfony 4 <br>
+					html5 - css3 - javaScript <br>
+					gitlab <br>
+					jira - confluence <br>
+					zeplin
+					<span class="jaune"></span>
+				</p>
+			</article>
+			<div class="trait"></div>
+			<article>
+				<h4 class="customer">Melijoe (11/18 - 06/19)</h4>
+				<img src="img/versionningMelijoe.jpeg" class="versionning" alt="">
+				<img src="img/melijoe.png" class="cover" />
+				<p class="projectDescription">
+					<span class="specificity">Problématique:</span><br> Projet vieillissant (10 ans), surchage de CSS et de JS, effets de bord, regressions <br>
+					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
+					<span class="specificity">Environnement:</span> <br>
+					symfony 3 <br>
+					html5 - css3 - jQuery <br>
+					github <br>
+					jira
+					<span class="jaune"></span>
+				</p>
+			</article>
+			<!-- FREELANCE -->
+			<!-- <h3 class="title">Freelance</h3> -->
+			<!-- <article>
+				<img src="img/unlimitedParis.jpeg" class="cover formation" />
+				<h4 class="customer"><a href="http://www.unlimitedparis.biz" target="blank" class="link">Unlimited Paris</a></h4>
+				<p class="projectDescription">
+					<span class="specificity">Problématique:</span><br> Site vieux de 10 ans ne disposant pas d'une version mobile (media queries) <br>
+					<span class="specificity">Mission:</span> <br> refonte integral de l'application, charte graphique, logo, maquette web <br>
+					<span class="specificity">Environnement:</span> <br>
+					html5 - css3 - jQuery <br>
+					<span class="jaune"></span>
+				</p>
+			</article> -->
+			<!-- FORMATION -->
+			<h3 class="title">Formation open classroom</h3>
+			<article>
+				<img src="img/webAgency.jpg" alt="apercu photo principal du site" class="cover formation" />
+				<h4 class="customer"><a href="http://www.webagency.recreative-web.fr" target="blank" class="link">Web Agency</a></h4>
+				<p class="projectDescription">
+					<span class="specificity">Mission:</span> <br> Réaliser un site vitrine de présentation d'une agence web, adaptable à tous les devices.<br>
+					<span class="specificity">Langages:</span> <br>
+					html5 - css3<br>
+					<span class="jaune"></span>
+				</p>
+			</article>
+			<div class="trait"></div>
+			<article>
+				<img src="img/velib.jpg" alt="apercu photo principal du site" class="cover formation" />
+				<h4 class="customer"><a href="http://www.velib.recreative-web.fr" target="blank" class="link">Mon petit vélo à Marseille</a></h4>
+				<p class="projectDescription">
+					<span class="specificity">Mission:</span> <br>Création d'un site de réservation en ligne de vélo.<br>
+					<span class="specificity">Langages:</span> <br>
+					html5 - css3 - JavaScript - API - géolocalisation - storage<br>
+					<span class="jaune"></span>
+				</p>
+			</article>
+			<div class="trait"></div>
+			<article>
+				<img src="img/strasbourg.jpg" alt="apercu photo principal du site" class="cover formation" />
+				<h4 class="customer"><a href="#" class="link">Office de tourisme de Strasbourg (désactivé)</a></h4>
+				<p class="projectDescription">
+					<span class="specificity">Mission:</span> <br>Création d'une application wordpress pour l'office du tourisme de Strasbourg<br>
+					<span class="specificity">Langages:</span> <br>
+					Wordpress - php - html5 - css3 - plugins<br>
+					<span class="jaune"></span>
+				</p>
+			</article>
 		</section>
 		<!-- SKILLS -->
 		<section class="skills" id="skills">
@@ -70,92 +190,6 @@
 				<li><img src="img/php.png" alt="logo php"></li>
 				<li><img src="img/symfony.png" alt="logo symfony"></li>
 			</ul>
-		</section>
-		<!-- WORKS -->
-		<section class="works" id="works">
-			<h2 class="subtitle">Works</h2>
-			<!-- CONSULTANTE -->
-			<h3 class="title">Consultante</h3>
-			<article>
-				<h4 class="customer">Pierre et vacances (10/19 - 02/20)</h4>
-				<img src="img/cpe.jpg" class="versionning" />
-				<p class="projectDescription">
-					<span class="specificity">Problématique:</span><br>  <br>
-					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
-					<span class="specificity">Environnement:</span> <br>
-					symfony 3 - backbone <br>
-					html5 - css3 - jQuery <br>
-					gitlab - mantis - figma
-				</p>
-				<img src="img/pierrevacances.png" class="cover" />
-			</article>
-			<div class="trait"></div>
-			<article>
-				<h4 class="customer">Center Parc (10/19 - 02/20)</h4>
-				<p class="projectDescription"> <br>
-					<span class="specificity">Problématique:</span><br>  <br>
-					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
-					<span class="specificity">Environnement:</span> <br>
-					symfony 3 - backbone <br>
-					html5 - css3 - jQuery <br>
-					gitlab - mantis - figma
-				</p>
-				<img src="img/centerparc.png" class="cover" />
-			</article>
-			<div class="trait"></div>
-			<article>
-				<h4 class="customer">Wamiz international (06/19 - 10/19)</h4>
-				<p class="projectDescription">
-					<span class="specificity">Problématique:</span><br>  <br>
-					<span class="specificity">Mission:</span> <br> résolution de bogues <br>
-					<span class="specificity">Environnement:</span> <br>
-					symfony 4 <br>
-					html5 - css3 - javaScript <br>
-					gitlab <br>
-					jira - confluence <br>
-					zeplin
-				</p>
-				<img src="img/wamiz.png" class="cover" />
-			</article>
-			<div class="trait"></div>
-			<article>
-				<h4 class="customer">Melijoe (11/18 - 06/19)</h4>
-				<img src="img/versionningMelijoe.jpeg" class="versionning" alt="">
-				<p class="projectDescription">
-					<span class="specificity">Problématique:</span><br> Projet vieillissant (10 ans), surchage de CSS et de JS, effets de bord, regressions <br>
-					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
-					<span class="specificity">Environnement:</span> <br>
-					symfony 3 <br>
-					html5 - css3 - jQuery <br>
-					github <br>
-					jira
-				</p>
-				<img src="img/melijoe.png" class="cover" />
-			</article>
-			<!-- FREELANCE -->
-			<h3 class="title">Freelance</h3>
-			<article>
-				<h4 class="customer"><a href="http://www.unlimitedparis.biz" target="blank">Unlimited Paris</a></h4>
-				<p class="projectDescription">
-					<span class="specificity">Problématique:</span><br> Site vieux de 10 ans ne disposant pas d'une version mobile (media queries) <br>
-					<span class="specificity">Mission:</span> <br> refonte integral de l'application, charte graphique, logo, maquette web <br>
-					<span class="specificity">Environnement:</span> <br>
-					html5 - css3 - jQuery <br>
-				</p>
-				<img src="img/unlimitedParis.jpeg" class="cover" />
-			</article>
-			<!-- FORMATION -->
-			<h3 class="title">Formation open classroom</h3>
-			<article>
-				<h4 class="customer"><a href="http://www.webagency.recreative-web.fr" target="blank">Web Agency</a></h4>
-				<p class="projectDescription">
-					<span class="specificity">Problématique:</span><br> Site vieux de 10 ans ne disposant pas d'une version mobile (media queries) <br>
-					<span class="specificity">Mission:</span> <br> refonte integral de l'application, charte graphique, logo, maquette web <br>
-					<span class="specificity">Environnement:</span> <br>
-					html5 - css3 - jQuery <br>
-				</p>
-				<img src="img/webAgency.jpg" alt="apercu photo principal du site" class="cover" />
-			</article>
 		</section>
 		<!-- CONTACT -->
 		<section class="contact" id="contact">
@@ -173,7 +207,7 @@
 	</main>
 	<footer>
 		<article>
-			<h3 class="subtitle">front ressources</h3>
+			<h3 class="subtitle">Ressources front</h3>
 			<ul>
 				<li><a href="https://developer.mozilla.org/fr" target="blank">MDN</a></li>
 				<li><a href="https://www.w3schools.com/" target="blank">W3schools</a></li>
@@ -190,7 +224,7 @@
 			</ul>
 		</article>
 		<article>
-			<h3 class="subtitle">back ressources</h3>
+			<h3 class="subtitle">Ressources back</h3>
 			<ul>
 				<li><a href="http://php.net/manual/fr" target="blank">PHP.net</a></li>
 				<li><a href="https://symfony.com" target="blank">Symfony</a></li>
@@ -227,5 +261,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/randomWords.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 		font-size var(--main-title--mobil)
 		font-family var(--shadows)
 		
-.hamburger-icon
+.hamburger-icon-open
 	cursor pointer
 	.bar-one,
 	.bar-two,
@@ -13,30 +13,49 @@
 		width 35px
 		height 5px
 		background-color black
-		margin 6px 0
-	
-nav
+		margin 6px 0	
+		
+.translate
 	position absolute
 	top 0
-	right -70%
 	width 70%
 	height 100vh
 	z-index 200
-	background-color silver
+	background-color cadetblue
 	transition right .5s ease
-	ul
-		font-family var(--encode)
-		li 
-			list-style-type none
-			height 3.4rem
-			border-bottom 1px solid black
-			a 
-				color black
-				line-height 3.4rem
-				text-transform uppercase
-				
-nav:hover
-	right 0
+	.hamburger-icon-close
+		position absolute
+		margin .5rem 0 0 1rem
+		cursor pointer
+		.bar-one
+			width 35px
+			height 5px
+			background-color black
+			margin 6px 0	
+			transform rotate(-45deg) translate(-9px, 6px)
+		.bar-two
+			opacity 0
+		.bar-three
+			width 35px
+			height 5px
+			background-color black
+			margin 6px 0	
+			transform rotate(45deg) translate(-8px, -8px)
+	nav
+		ul
+			font-family var(--encode)
+			li 
+				list-style-type none
+				height 3.4rem
+				border-bottom 1px solid black
+				a 
+					color black
+					line-height 3.4rem
+					text-transform uppercase
+	&.close
+		right -70%
+	&.open
+		right 0
 				
 #home:target,
 #home:target main,
@@ -46,7 +65,7 @@ nav:hover
 #skills:target main,
 #contact:target,
 #contact:target main
-	margin-top -100px
-	padding-top 100px
+	margin-top -50px
+	padding-top 50px
 
 	  
