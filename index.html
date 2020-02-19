@@ -23,7 +23,7 @@
 	})(window,document,'script','dataLayer','GTM-WVD2456');</script>
 	<!-- End Google Tag Manager -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,800&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:200,400,600,800" rel="stylesheet">
@@ -49,8 +49,8 @@
 					<li><a href="#works">works</a></li>
 					<li><a href="#skills">skills</a></li>
 					<li><a href="#contact">contact</a></li>
-					<!-- <li><a href="https://github.com/RecreativeWeb" target="blank" class="github"><img src="img/github.png" /></a></li>
-					<li><a href="https://github.com/RecreativeWeb" target="blank" class="linkedin"><img src="img/linkedin.png" /></a></li> -->
+					<li class="borderNone githeight"><a href="https://github.com/RecreativeWeb" target="blank" class="links github"><img src="img/github.png" alt="github logo" /></a></li>
+					<li class="borderNone linkheight"><a href="https://www.linkedin.com/in/audrey-poeydomenge-9756ba108" target="blank" class="links linkedin"><img src="img/linkedin.png" alt="linkedin logo" /></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -59,11 +59,15 @@
 		<!-- HOME -->
 		<section class="home" id="home">
 			<h2 class="subtitle">HOME</h2>
-			<h2 class="title">Developpeuse web <span class="junior">junior</span></h2>
-			<p class="now">Actuellement en poste chez <br/> Pierre & Vacances</p>
-			<div class="trait"></div>
-			<p class="metiers" id="mots">applications, CMS, frameworks</p>
-			<p class="ancreContact"><a href="#contact">Contact</a></p>
+			<div class="yellowBackground">
+				<h2 class="title">Developpeuse web <span class="junior">junior</span> <br>
+				<span class="certif">- Certifiée Microsoft 70480 -</span></h2>
+				<div class="trait"></div>
+				<p class="now">Actuellement en poste chez <br/> Pierre & Vacances</p>
+				<div class="trait"></div>
+				<p class="metiers" id="mots">applications, CMS, frameworks</p>
+				<p class="ancreContact"><a href="#contact">Contact</a></p>
+			</div>
 		</section>
 		<!-- WORKS -->
 		<section class="works" id="works">
@@ -71,12 +75,12 @@
 			<!-- CONSULTANTE -->
 			<h3 class="title">Consultante</h3>
 			<article>
-				<h4 class="customer">Center Parc & Pierre et vacances <br> (10/19 - 02/20)</h4>
-				<img src="img/cpe.jpg" class="versionning cpe" />
-				<img src="img/pierrevacances.png" class="cover" />
+				<p class="customer">Octobre 2019 - Février 2020</p>
+				<img src="img/centerparc.png" class="cover cpe" alt="Center Parc" />
+				<img src="img/pierrevacances.png" class="cover pv" alt="Pierre et Vacances" />
+				<h4 class="customer">Center Parc & Pierre et vacances</h4>
 				<p class="projectDescription">
-					<span class="specificity">Problématique:</span><br>  <br>
-					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
+					<span class="specificity">Mission:</span> <br> run, résolution de bogues <br>
 					<span class="specificity">Environnement:</span> <br>
 					symfony 3 - backbone <br>
 					html5 - css3 - jQuery <br>
@@ -86,23 +90,10 @@
 			</article>
 			<div class="trait"></div>
 			<article>
-				<img src="img/centerparc.png" class="cover" />
-				<p class="projectDescription"> <br>
-					<span class="specificity">Problématique:</span><br>  <br>
-					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
-					<span class="specificity">Environnement:</span> <br>
-					symfony 3 - backbone <br>
-					html5 - css3 - jQuery <br>
-					gitlab - mantis - figma
-					<span class="jaune"></span>
-				</p>
-			</article>
-			<div class="trait"></div>
-			<article>
-				<h4 class="customer">Wamiz international (06/19 - 10/19)</h4>
-				<img src="img/wamiz.png" class="cover" />
+				<h4 class="customer">Juin 2019 - Octobre 2019</h4>
+				<img src="img/wamiz.png" class="cover" alt="Wamiz" />
+				<h4 class="customer">Wamiz international</h4>
 				<p class="projectDescription">
-					<span class="specificity">Problématique:</span><br>  <br>
 					<span class="specificity">Mission:</span> <br> résolution de bogues <br>
 					<span class="specificity">Environnement:</span> <br>
 					symfony 4 <br>
@@ -115,9 +106,9 @@
 			</article>
 			<div class="trait"></div>
 			<article>
-				<h4 class="customer">Melijoe (11/18 - 06/19)</h4>
-				<img src="img/versionningMelijoe.jpeg" class="versionning" alt="">
-				<img src="img/melijoe.png" class="cover" />
+				<p class="customer">Novembre 2018 - Juin 2019</p>
+				<img src="img/melijoe.png" class="cover" alt="Melijoe" />
+				<h4 class="customer">Melijoe</h4>
 				<p class="projectDescription">
 					<span class="specificity">Problématique:</span><br> Projet vieillissant (10 ans), surchage de CSS et de JS, effets de bord, regressions <br>
 					<span class="specificity">Mission:</span> <br> refonte de la homepage (referencement et chargement), résolution de bogues <br>
@@ -145,7 +136,7 @@
 			<!-- FORMATION -->
 			<h3 class="title">Formation open classroom</h3>
 			<article>
-				<img src="img/webAgency.jpg" alt="apercu photo principal du site" class="cover formation" />
+				<img src="img/webAgency.jpg" alt="Web Agency" class="cover formation" />
 				<h4 class="customer"><a href="http://www.webagency.recreative-web.fr" target="blank" class="link">Web Agency</a></h4>
 				<p class="projectDescription">
 					<span class="specificity">Mission:</span> <br> Réaliser un site vitrine de présentation d'une agence web, adaptable à tous les devices.<br>
@@ -156,7 +147,7 @@
 			</article>
 			<div class="trait"></div>
 			<article>
-				<img src="img/velib.jpg" alt="apercu photo principal du site" class="cover formation" />
+				<img src="img/velib.jpg" alt="Mon petit vélo à Marseille" class="cover formation" />
 				<h4 class="customer"><a href="http://www.velib.recreative-web.fr" target="blank" class="link">Mon petit vélo à Marseille</a></h4>
 				<p class="projectDescription">
 					<span class="specificity">Mission:</span> <br>Création d'un site de réservation en ligne de vélo.<br>
@@ -167,7 +158,7 @@
 			</article>
 			<div class="trait"></div>
 			<article>
-				<img src="img/strasbourg.jpg" alt="apercu photo principal du site" class="cover formation" />
+				<img src="img/strasbourg.jpg" alt="Office de tourisme de Strasbourg" class="cover formation" />
 				<h4 class="customer"><a href="#" class="link">Office de tourisme de Strasbourg (désactivé)</a></h4>
 				<p class="projectDescription">
 					<span class="specificity">Mission:</span> <br>Création d'une application wordpress pour l'office du tourisme de Strasbourg<br>
@@ -184,24 +175,28 @@
 			<ul class="flexSkills">
 				<li><img src="img/html.png" alt="logo html5"></li>
 				<li><img src="img/css.png" alt="logo css3"></li>
+				<li><img src="img/stylus.png" alt="logo stylus"></li>
 				<li><img src="img/bootstrap.png" alt="logo bootstrap"></li>
 				<li><img src="img/javascript.png" alt="logo javascript"></li>
 				<li><img src="img/jquery.png" alt="logo jquery"></li>
 				<li><img src="img/php.png" alt="logo php"></li>
 				<li><img src="img/symfony.png" alt="logo symfony"></li>
+				<li><img src="img/skills.png" alt="logos"></li>
 			</ul>
 		</section>
 		<!-- CONTACT -->
 		<section class="contact" id="contact">
 			<h2 class="subtitle">Contact</h2>
 			<article>
+				<h2>N'hésitez pas à me contacter !</h2>
 				<p>
 					Audrey POEYDOMENGE <br><br>
 					mail: contact(at)recreative-web(point)fr<br/>
-					phone: +33(6) 58 47 13 93 <br>
+					phone: <a href="phoneto">+33(6) 58 47 13 93</a><br>
+					<a href="https://whereby.com/recreative-web" target="blank">whereby</a><br>
+					<a href="cv2018web.pdf" target="blank">télécharger mon C.V </a>
 				</p>
-				<img src="img/CV.jpg">
-				<a href="cv2018web.pdf" target="blank">Télécharger mon C.V</a>
+				<img src="img/CV.jpg" alt="apercu de cv" />
 			</article>
 		</section>
 	</main>
@@ -214,12 +209,14 @@
 				<li><a href="http://caniuse.com/#home" target="blank">Can i use</a></li>
 				<li><a href="http://validator.w3.org/" target="blank">Validator W3C html</a></li>
 				<li><a href="http://jigsaw.w3.org/css-validator/" target="blank">Validator W3C css</a></li>
+				<li><a href="http://kangax.github.io/compat-table/es6/">Compatibilité ES6</a></li>
 				<li><a href="http://necolas.github.io/normalize.css" target="blank">Normalize CSS</a></li>
 				<li><a href="http://lesscss.org/#" target="blank">Less</a></li> 
 				<li><a href="http://sass-lang.com" target="blank">Sass</a></li>
 				<li><a href="http://stylus-lang.com/">Stylus</a></li>
 				<li><a href="http://getbootstrap.com" target="blank">Bootstrap</a></li>
 				<li><a href="http://materializecss.com" target="blank">Materialize CSS</a></li>
+				<li><a href="https://jquery.com" target="blank">jQuery</a></li>
 				<li><a href="https://angular.io" target="blank">Angular</a></li>
 			</ul>
 		</article>
@@ -230,24 +227,24 @@
 				<li><a href="https://symfony.com" target="blank">Symfony</a></li>
 				<li><a href="https://twig.symfony.com" target="blank">Twig</a></li>
 				<li><a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/index.html" target="blank">Doctrine 2</a></li>
+				<li><a href="https://getcomposer.org" target="blank">Composer</a></li>
 			</ul>
 		</article>
 		<article>
 			<h3 class="subtitle">toolbox</h3>
 			<ul>
+				<li><a href="https://developer.mozilla.org/fr/docs/Mozilla/Mobile/Balise_meta_viewport#Les_bases_du_viewport" target="blank">Balise Viewport</a></li>
 				<li><a href="https://fonts.google.com/" target="blank">Google Fonts</a></li>
 				<li><a href="https://www.dafont.com/fr/" target="blank">Dafont</a></li>
 				<li><a href="http://glyphicons.com" target="blank">Glyphicon</a></li> 
 				<li><a href="http://fontawesome.io" target="blank">Font awesome</a></li>
-				<li><a href="https://developer.mozilla.org/fr/docs/Mozilla/Mobile/Balise_meta_viewport#Les_bases_du_viewport" target="blank">Balise Viewport</a></li>
 				<li><a href="http://ianlunn.github.io/Hover" target="blank">Hover CSS</a></li>
 				<li><a href="http://www.kitsgraphiques.net/convertisseur-rvb-hexadecimal.html" target="blank">Kits graphique</a></li>
 				<li><a href="https://material.io/guidelines" target="blank">Material Design</a></li>
 				<li><a href="https://cssmatic.com/box-shadow" target="blank">Box-shadow</a></li>
 				<li><a href="https://cssmatic.com/border-radius" target="blank">Border-radius</a></li>
 				<li><a href="https://cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28left\%2C\%20rgba\%28248\%2C80\%2C50\%2C1\%29\%200\%25\%2C\%20rgba\%28241\%2C111\%2C92\%2C1\%29\%2050\%25\%2C\%20rgba\%28246\%2C41\%2C12\%2C1\%29\%2051\%25\%2C\%20rgba\%28240\%2C47\%2C23\%2C1\%29\%2071\%25\%2C\%20rgba\%28231\%2C56\%2C39\%2C1\%29\%20100\%25\%29\%3B'" target="blank">Gradient</a></li>
-				<li><a href="https://jquery.com" target="blank">jQuery</a></li>
-				<li><a href="https://getcomposer.org" target="blank">Composer</a></li>
+				<li><a href="https://jsbin.com/?html,output" target="blank">JSbin</a></li>
 			</ul>
 		</article>
 		<article>
@@ -260,7 +257,7 @@
 		</article>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/randomWords.js"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
+	<script src="js/randomWords.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>

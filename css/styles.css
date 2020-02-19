@@ -42,6 +42,8 @@ header {
 }
 main {
   padding-top: 52px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .title {
   font-size: 1.4rem;
@@ -90,7 +92,7 @@ footer {
   width: 70%;
   height: 100vh;
   z-index: 200;
-  background-color: #5f9ea0;
+  background-color: #5f9eb0;
   transition: right 0.5s ease;
 }
 .translate .hamburger-icon-close {
@@ -113,7 +115,7 @@ footer {
   height: 5px;
   background-color: #000;
   margin: 6px 0;
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-2px, 0px);
 }
 .translate nav ul {
   font-family: var(--encode);
@@ -123,10 +125,31 @@ footer {
   height: 3.4rem;
   border-bottom: 1px solid #000;
 }
+.translate nav ul li.borderNone {
+  border-bottom: initial;
+}
+.translate nav ul li.githeight {
+  height: 85px;
+}
+.translate nav ul li.linkheight {
+  height: 110px;
+}
 .translate nav ul li a {
   color: #000;
   line-height: 3.4rem;
   text-transform: uppercase;
+}
+.translate nav ul li a.links {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 1rem 0 0 0;
+}
+.translate nav ul li a img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 .translate.close {
   right: -70%;
@@ -145,35 +168,41 @@ footer {
   margin-top: -50px;
   padding-top: 50px;
 }
-.home {
+.home .yellowBackground {
   background-color: #ffebcd;
   padding: 5rem 1.5rem 5rem 1.5rem;
 }
-.home .junior {
+.home .yellowBackground h2 {
+  margin-bottom: 2rem;
+}
+.home .yellowBackground h2 .junior {
   font-family: var(--shadows);
   font-size: 2rem;
 }
-.home .now {
+.home .yellowBackground h2 .certif {
+  font-size: 1rem;
+}
+.home .yellowBackground .now {
   font-family: var(--montserrat);
   font-size: 1rem;
   color: #282828;
   text-align: center;
-  margin: 1rem 0 1.5rem;
+  margin: 2rem 0;
 }
-.home .trait {
+.home .yellowBackground .trait {
   width: 60px;
   height: 1px;
   border-top: 1px solid #000;
   margin: 0 auto;
 }
-.home .metiers {
+.home .yellowBackground .metiers {
   text-align: center;
   font-weight: 400;
   font-family: var(--encode);
   font-size: 1rem;
   margin: 2rem 0 2rem;
 }
-.home .ancreContact {
+.home .yellowBackground .ancreContact {
   width: 10rem;
   height: 2.6rem;
   background-color: #000;
@@ -182,7 +211,7 @@ footer {
   line-height: 2.6rem;
   border-radius: 45px;
 }
-.home .ancreContact a {
+.home .yellowBackground .ancreContact a {
   text-decoration: none;
   color: #fff;
   font-family: var(--encode);
@@ -253,6 +282,9 @@ footer {
   margin: 0 auto;
   border: 1px solid #c0c0c0;
 }
+.works article .cover.cpe {
+  margin-bottom: 1rem;
+}
 .works article .cover.formation {
   width: 75%;
 }
@@ -273,7 +305,7 @@ footer {
 }
 .skills .flexSkills li {
   width: 49%;
-  height: 150px;
+  height: auto;
   list-style-type: none;
   border-bottom: none;
 }
@@ -298,10 +330,8 @@ footer {
   border: 1px solid #808080;
 }
 .contact a {
-  display: block;
-  text-align: center;
-  margin-top: 1rem;
   color: #000;
+  text-decoration: none;
   font-family: var(--encode);
 }
 ul {
@@ -341,4 +371,50 @@ audio {
 }
 .copyright a:hover {
   color: #ff0;
+}
+@media screen and (min-width: 768px) {
+  .works .versionning {
+    display: none;
+  }
+  .works article .cover {
+    width: 80%;
+  }
+  .works article .projectDescription .jaune {
+    width: 80%;
+  }
+  .skills .flexSkills li {
+    width: 33%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    align-items: baseline;
+  }
+  .hamburger-icon-open {
+    display: none;
+  }
+  div.translate {
+    position: relative;
+    right: 0 !important;
+    height: initial;
+    background-color: initial;
+  }
+  div.translate .hamburger-icon-close {
+    display: none;
+  }
+  div.translate nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  div.translate nav ul li {
+    border-bottom: none;
+  }
+  div.translate nav ul li.borderNone {
+    display: none;
+  }
+  .skills .flexSkills li {
+    width: 24%;
+    height: auto;
+  }
 }

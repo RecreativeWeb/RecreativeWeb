@@ -21,7 +21,7 @@
 	width 70%
 	height 100vh
 	z-index 200
-	background-color cadetblue
+	background-color #5F9EB0
 	transition right .5s ease
 	.hamburger-icon-close
 		position absolute
@@ -40,7 +40,7 @@
 			height 5px
 			background-color black
 			margin 6px 0	
-			transform rotate(45deg) translate(-8px, -8px)
+			transform rotate(45deg) translate(-2px, 0px)
 	nav
 		ul
 			font-family var(--encode)
@@ -48,10 +48,26 @@
 				list-style-type none
 				height 3.4rem
 				border-bottom 1px solid black
+				&.borderNone
+					border-bottom initial
+				&.githeight
+					height 85px
+				&.linkheight
+					height 110px
 				a 
 					color black
 					line-height 3.4rem
 					text-transform uppercase
+					&.links
+						display block
+						height 100%
+						width auto
+						margin 1rem 0 0 0
+					img
+						display block
+						height 100%
+						width auto
+						margin 0 auto
 	&.close
 		right -70%
 	&.open
